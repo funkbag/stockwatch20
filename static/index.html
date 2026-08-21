@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StockWatch 20</title>
+  <link rel="stylesheet" href="/static/styles.css?v=1.0.0" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>StockWatch 20</h1>
+      <p>Technical structure · catalysts · sentiment · Fibonacci · Elliott heuristic</p>
+    </div>
+    <div class="toolbar">
+      <span id="updated">Not updated</span>
+      <button id="refresh">Refresh now</button>
+    </div>
+  </header>
+
+  <section class="summary" id="summary"></section>
+  <section class="filters" id="signalFilters" aria-label="Signal label filters">
+    <span class="filter-title">Signal labels</span>
+    <label class="filter-chip"><input type="checkbox" value="BULLISH ALERT" checked> Bullish alert</label>
+    <label class="filter-chip"><input type="checkbox" value="BULLISH WATCH" checked> Bullish watch</label>
+    <label class="filter-chip"><input type="checkbox" value="NEUTRAL" checked> Neutral</label>
+    <label class="filter-chip"><input type="checkbox" value="BEARISH WATCH" checked> Bearish watch</label>
+    <label class="filter-chip"><input type="checkbox" value="BEARISH ALERT" checked> Bearish alert</label>
+    <label class="filter-chip"><input type="checkbox" value="NO DATA" checked> No data</label>
+    <button id="onlyAlerts" class="secondary-btn" type="button">Alerts only</button>
+    <button id="showAll" class="secondary-btn" type="button">Show all</button>
+  </section>
+
+  <section class="filters movement-filters" id="movementFilters" aria-label="Score movement filters">
+    <span class="filter-title">Score movement</span>
+    <label class="filter-chip movement-up"><input type="checkbox" value="IMPROVING" checked> Fast improving ≥ +10</label>
+    <label class="filter-chip movement-stable"><input type="checkbox" value="STABLE" checked> Stable −9.9 to +9.9</label>
+    <label class="filter-chip movement-down"><input type="checkbox" value="DETERIORATING" checked> Fast deteriorating ≤ −10</label>
+    <button id="onlyMovers" class="secondary-btn" type="button">Fast movers only</button>
+    <button id="showAllMovement" class="secondary-btn" type="button">All movement</button>
+  </section>
+
+  <main>
+    <section class="grid" id="grid"></section>
+    <aside id="detail" class="detail">
+      <div class="empty">Select a ticker card for detail.</div>
+    </aside>
+  </main>
+  <footer>Research dashboard only. Automated signals can be wrong, especially Elliott-wave classifications and headline sentiment.</footer>
+<script src="/static/app.js?v=1.0.0"></script>
+</body>
+</html>

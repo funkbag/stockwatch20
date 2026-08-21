@@ -1,0 +1,33 @@
+watchlist:
+  - AAOI
+  - ABCL
+  - FSLR
+  - CRWD
+  - WYFI
+  - SNOW
+  - SHOP
+  - ASO
+  - APPS
+  - COIN
+  - NBIX
+  - SPCX
+  - NVAX
+  - TRLV
+  - CORZ
+  - ISRG
+  - NEE
+  - SBUX
+  - SPIR
+  - ADUR
+
+poll_minutes: 15
+news_items_per_ticker: 8
+benchmark: SPY
+alert_threshold: 55
+timezone: Europe/Vienna
+
+# Restrict technical history where a ticker is new or was previously used
+# by another security. Dates are inclusive.
+history_start:
+  SPCX: 2026-06-12
+  TRLV: 2026-06-10

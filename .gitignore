@@ -1,0 +1,27 @@
+# Secrets
+.env
+
+# Persistent runtime state
+/data/*
+!/data/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local backups and deployment archives
+*.bak
+*.bak-*
+static.bak-*/
+*.zip
+*.tar.gz

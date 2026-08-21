@@ -1,0 +1,11 @@
+.git
+.gitignore
+.env
+__pycache__
+*.pyc
+*.pyo
+*.zip
+*.tar.gz
+data/state.json
+static.bak-*
+docs/
